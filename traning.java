@@ -1,73 +1,43 @@
 import java.util.Scanner;
 public class traning {
     public static void main(String[] args) {
-        int [][] arr={{1,2,3,4,5},{2,3,4,5,6},{3,4,5,6,7}};
+        int sum=123;
+        if(sum%2==0){
+            System.out.println("even");
+        }
+        else{
+            System.out.println("odd");
+        }
+        int [] arr = {1,3,4,6};
+        int [] arr1 ={9,10,11,13};
+        int [] arr2= new int[arr.length+arr.length];
         for(int i=0;i<arr.length;i++){
-            for(int j=0;j<arr[i].length;j++){
-                System.out.print(arr[i][j]+" ");
-            }
-            System.out.println();
-            
-        }
-        int sum=0;
-            for(int k=0;k<arr.length;k++){
-                for(int j=0;j<arr[k].length;j++){
-                    sum+=arr[k][j];
-                }
-                System.out.println("sum of the row"+ k+":"+sum);
-                sum=0;
-            }
-        int product=1;
-        for(int k=0;k<arr.length;k++){
-            for(int j=0;j<arr[k].length;j++){
-                product*=arr[k][j];
-            }
-            System.out.println("multi of the row"+ k+":"+product);
-            product=1;
-        }
-    
-        System.out.println("2D array elements:");
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                System.out.print(arr[i][j] + "  ");
-            }
-            System.out.println();
-        }
+            arr2[i]=arr[i];        
+    }
+    for(int j=0;j<arr1.length;j++){
+         arr2[arr.length+j]=arr1[j];
 
-        // Find min and max
-        int min= arr[0][0];
-        int max = arr[0][0];
-        int count = 0;
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                if (arr[i][j] < min) {
-                    min = arr[i][j];
-                }
-                if (arr[i][j] > max) {
-                    max = arr[i][j];
-                }
-                count++;
-            }
-        }
-        System.out.println("Minimum value in 2D array: " + min);
-        System.out.println("Maximum value in 2D array: " + max);
-        System.out.println("Total number of elements in 2D array: " + count);
+    }
+    for(int k=0;k<arr2.length;k++){
+        System.out.println(arr2[k]);
+    }
 
-        // Convert 2D array to 1D array
-        int[] oneDArray = new int[count];
-        int index = 0;
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                oneDArray[index++] = arr[i][j];
-            }
-        }
-        System.out.println("1D array elements:");
-        for (int i = 0; i < oneDArray.length; i++) {
-            System.out.print(oneDArray[i] + " ");
-        }
-        System.out.println();
+    String str="hello";
+    for(int i=0;i<str.length();i++){
+        System.out.print(str.charAt(i));
+    }
+    System.out.println();
+    String rev="";
+    for(int j=str.length()-1;j>=0;j--){
+      rev+=str.charAt(j);
+    }
+    System.out.println(rev);
+    if(str.equals(rev)){
+        System.out.println("it is palendrome");
+    }
+    else{
+        System.out.println("not a palandrome");
+    }
+
     }
 }
-
-
-   
