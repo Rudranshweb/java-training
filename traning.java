@@ -1,15 +1,12 @@
 import java.util.Scanner;
 public class traning {
-    public static void main(String[] args) {
-       String str1="Hello";
-        System.out.println(str1.concat("hiii"));
-        System.out.println(str1);
-
-        StringBuilder str=new StringBuilder("hello");
-        str.append("hill");
-        System.out.println(str);
-
-
-
+  int a=5;
+      public static void main(String[] args) {
+      traning obj=new traning();
+      //obj.sum(6);
+      System.out.println(obj.a);
+      
+    
+    
     }
-    }
+  }
