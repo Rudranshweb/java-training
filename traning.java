@@ -1,11 +1,19 @@
 import java.util.Scanner;
 public class traning {
-  int a=5;
+  static int targetsum(int[] arr){
+        int target=8;
+        for(int i=0;i<arr.length;i++){
+          if(arr[i]==target){
+            System.out.println(i);
+          }
+        }
+        return -1;
+  }
       public static void main(String[] args) {
-      traning obj=new traning();
-      //obj.sum(6);
-      System.out.println(obj.a);
-      
+      int [] arr={5,8,6,3,6,8};
+      targetsum(arr);
+    
+
     
     
     }
