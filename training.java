@@ -1,22 +1,19 @@
-import java.util.Scanner;
-public class training {
-    String firstname= "rahul";
-    int age=19;
-    training(String s,int a){
-        firstname=s;
-        age=a;
-        System.out.println(firstname+ " "+age);
-    }
+//Single inheritence
+class animal{
+  void eat(){
+    System.out.println("eatinggggggggggggggg");
   }
-    class hello{
-      public static void main(String[] args) {
-        training obj=new training("rohit", 19);
-        training obj1=new training("rahul", 17);
-
-      }
-        
-        
-    }
-    
-      
+}
+class dog extends animal{
+  void bark(){
+    System.out.println("barkkkkkkkkkkkkkkkkkk");
+  }
   
+}
+public class training{
+  public static void main(String[] args) {
+    dog obj= new dog();
+    obj.eat();
+    obj.bark();
+  }
+}
