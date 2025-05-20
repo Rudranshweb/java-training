@@ -1,14 +1,25 @@
 public class training {
 
   public static void main(String[] args) {
-    int[] arr={1,2,3,4,5};
-    int lastvle =arr[arr.length-1];
-    for(int i=arr.length-1;i>0;i--){
-      arr[i]=arr[i-1];
+    String str="aaaabbbccaa";
+    int counta=0;
+    int countb=0;
+    int countc=0;
+    for(int i=0;i<str.length();i++){
+      char ch=str.charAt(i);
+      if(ch=='a'){
+        counta++;
     }
-    arr[0]=lastvle;
-    for (int k : arr) {
-      System.out.println(k);
+    else if(ch=='b'){
+     countb++;
     }
+    else if(ch=='c'){
+     countc++;
+    }
+
+}
+System.out.println("a is "+ counta);
+System.out.println("b is "+ countb);
+System.out.println("c is "+ countc);
 }
 }
