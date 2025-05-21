@@ -1,25 +1,42 @@
-public class training {
+// public class training {
+//   class A{
+// void sum(){
+//   System.out.println("mai hu A");
+// }
+//   }
 
+// }
+// class B{
+//   void sum(){
+//     System.out.println("mai hu B");
+//   }
+// }
+// class c extends training.A,trainingB{
+//   public static void main(String[] args) {
+//     obj c=new c();
+//     obj.sum();
+//   }
+// }
+interface training {
+  void print();
+  void show();
+  
+}
+class dev implements training {
+  public void print(){
+    System.out.println("print the bill");
+  }
+  public void show(){
+    System.out.println("show the menu");
+  }
+}
+class main{
   public static void main(String[] args) {
-    String str="aaaabbbccaa";
-    int counta=0;
-    int countb=0;
-    int countc=0;
-    for(int i=0;i<str.length();i++){
-      char ch=str.charAt(i);
-      if(ch=='a'){
-        counta++;
-    }
-    else if(ch=='b'){
-     countb++;
-    }
-    else if(ch=='c'){
-     countc++;
-    }
+    dev obj=new dev();
+    obj.print();
+    obj.show();
+  }
+}
+  
 
-}
-System.out.println("a is "+ counta);
-System.out.println("b is "+ countb);
-System.out.println("c is "+ countc);
-}
-}
+   
