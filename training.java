@@ -17,26 +17,26 @@
 //     obj.sum();
 //   }
 // }
-interface training {
-  void print();
+//multiple inheritence using interface
+interface client {
   void show();
   
 }
-class dev implements training {
-  public void print(){
-    System.out.println("print the bill");
-  }
-  public void show(){
-    System.out.println("show the menu");
-  }
+interface client2{
+void show();
+  
 }
-class main{
+class dev implements client,client2 {
+  public void show(){
+    System.out.println("show the common feature for client ,client2");
+  }
   public static void main(String[] args) {
     dev obj=new dev();
-    obj.print();
     obj.show();
   }
 }
+  
+
   
 
    
