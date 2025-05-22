@@ -1,12 +1,14 @@
+import java.util.Scanner;
+
 public class training{
-  //try and catch method
+  //exception handling according to user input
   public static void main(String[] args) {
-    int a=10;int b=0;
+    int [] arr={1,2,3,4};
+    Scanner scanner=new Scanner(System.in);
     try {
-      int c=a/b;
-      System.out.println(c);
+      System.out.println(arr[scanner.nextInt()]);
     } catch (Exception e) {
-      System.out.println("we cannot divide by zero");
+      System.out.println(e);
     }
     System.out.println("helloo");
     System.out.println("hiii");
