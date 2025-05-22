@@ -3,10 +3,11 @@ import java.util.Scanner;
 public class training{
   //exception handling according to user input
   public static void main(String[] args) {
-    int [] arr={1,2,3,4};
-    Scanner scanner=new Scanner(System.in);
+    String str;
     try {
-      System.out.println(arr[scanner.nextInt()]);
+      str=null;
+      System.out.println(str.toUpperCase());
+     
     } catch (Exception e) {
       System.out.println(e);
     }
