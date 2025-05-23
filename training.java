@@ -19,16 +19,17 @@
       
 //     }
 import java.util.ArrayList;
+import java.util.Collections;
 public class training {
 
   public static void main(String[] args) {
     ArrayList<String> arr= new ArrayList<>();
-    arr.add("rahul");
-    arr.add("harsh");
-    arr.add("karan");
-    arr.add(1,"india");
-    arr.set(3, "uk");
-    arr.get(1);
+    arr.add("a");
+    arr.add("b");
+    arr.add("A");
+     arr.add("C");
+    arr.add("B");
+    Collections.sort(arr);
     System.out.println(arr);
   }
 }
