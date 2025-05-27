@@ -20,17 +20,19 @@
 //     }
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
+import java.util.LinkedList;
 public class training {
 
   public static void main(String[] args) {
-    ArrayList<String> arr= new ArrayList<>();
-    arr.add("a");
-    arr.add("b");
-    arr.add("A");
-     arr.add("C");
-    arr.add("B");
-    Collections.sort(arr);
-    System.out.println(arr);
+    // int [] arr={-4,7,5,-8,6,2};
+    HashSet<String> arr= new HashSet<>();
+    arr.add("CA");
+    arr.add("Ba");
+    arr.add("Ar");
+  
+  System.out.println(arr);
+    
   }
 }
 
