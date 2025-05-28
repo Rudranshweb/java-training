@@ -1,17 +1,15 @@
 import java.util.HashMap;
        public class training{
-        
         public static void main(String[] args) {
-            HashMap<String,Integer> map= new HashMap<>();
-           map.put("id0",1);
-            map.put("id1",2); 
-            map.put("id1",3);
-            System.out.println(map);
-            System.out.println(map.get("id1"));
-
+            String str="programing";
+            // char[] ch=str.toCharArray();
+            HashMap<Character,Integer> map= new HashMap<>();
+                for(char ch : str.toCharArray()){
+                    map.put(ch,  map.getOrDefault(ch, 0)+1);
+                System.out.println(map);
+                }
+            }
         }
-       }
-
 
 
   
