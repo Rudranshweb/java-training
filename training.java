@@ -1,15 +1,30 @@
-import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.Iterator;
        public class training{
         public static void main(String[] args) {
-            String str="programing";
-            // char[] ch=str.toCharArray();
-            HashMap<Character,Integer> map= new HashMap<>();
-                for(char ch : str.toCharArray()){
-                    map.put(ch,  map.getOrDefault(ch, 0)+1);
-                System.out.println(map);
+            ArrayList<String> list= new ArrayList<>();
+                list.add("ravi");
+                list.add("vijay");
+                list.add("Ajay");
+                list.add("Anil");
+                list.add("Gaurav");
+                list.add("Amit");
+                list.add("Rahul");
+                list.add("Adarsh");
+                Iterator<String> it =list.iterator();
+                while(it.hasNext()){
+                    String elem =it.next();
+                    System.out.println(elem);
+                    if(elem.startsWith("A")){
+                        it.remove();
+                        
+                    }
                 }
-            }
+                System.out.println(list);
+                
         }
+    }
+
 
 
   
