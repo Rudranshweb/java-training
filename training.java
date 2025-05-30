@@ -15,18 +15,16 @@ import java.util.ListIterator;
                 ListIterator<String> it =list.listIterator();
                 while(it.hasNext()){
                     String elem =it.next();
-                    System.out.println(elem);}
-                    System.out.println("pree");
-                    while(it.hasPrevious()){
-                        String last=it.previous();
-                        System.out.println(last);
+                    if(elem.length()<=4){
+                        it.set("byee");
                     }
-                    // if(elem.startsWith("A")|| elem.startsWith("a")){
-                    //     it.remove();
-                        
+                   
+                 }
+                 System.out.println(list);
+        
                     
                 }
-                // System.out.println(list);
+               
                 
         }
     
