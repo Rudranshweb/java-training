@@ -1,20 +1,17 @@
-class myrunable implements Runnable {
-public void run() {
-    System.out.println(Thread.currentThread().getName() + "Hello");
-}
-}
+
 class hello{
     public static void main(String[] args) {
-        myrunable obj=new myrunable();
-        Thread t1= new Thread(obj);
+        System.out.println("hey");
+        // myrunable obj=new myrunable();
+        Thread t1= new Thread(()->{
+            System.out.println("hellllllllo");
+        });
+        Thread t2=new Thread(()->{
+            System.out.println("hhiiiiiii");
+        });
         t1.start();
-        try{
-            t1.join();
-        }
-        catch(Exception e){
-            System.out.println("error");
-        }
-        System.out.println("hhhiiii");
+        t2.start();
     }
-    }
+}
+
         
