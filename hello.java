@@ -21,13 +21,14 @@ import java.util.stream.Collectors;
 class hello
 {
   public static void main(String[] args) {
-    ArrayList<Integer>list =new ArrayList<>();
-   for(int i=1;i<=5;i++){
-    list.add(i);
-   }
-   List<Integer> result=list.stream()
-   .filter(n->n%2==0)
-   .map(n->n*n)
+    ArrayList<String>list =new ArrayList<>();
+  list.add("ram");
+  list.add("shyam");
+  list.add("om");
+  list.add("sita");
+   List<String> result=list.stream()
+   .filter(n->n.length()>3)
+   .map(n->n.toUpperCase())
    .collect(Collectors.toList());
    Collections.sort(result);
    
